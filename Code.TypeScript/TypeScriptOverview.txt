@@ -1,0 +1,21 @@
+﻿class               - Container for members such as properties and functions
+constructor         - Provides initialization functionality in a class
+exports             - Export a member from a module
+extends             - Extend a class or interface
+implements          - Implement an interface
+imports             - Import a module
+interface           - Defines code contract that can be implemented by types
+module/namespace    - Container for classes and other code
+public/private      - Member visibility modifiers
+…                   - Rest parameter syntax
+=>                  - Arrow syntax used with definitions and functions
+<typeName>          - < > characters use to cast/convert between types
+:                   - Separator between variable/parameter names and types
+
+
+
+
+Ambient Declarations
+
+declare	var document;	document.title = "Hello";Type Definition Files (aka Declaration Source Files)///	<reference path="jquery.d.ts" />	  	declare var	$;	var data = "Hello John";$("div").text(data);Typings, Variables and Functions 
+- Emits JavaScript- Optional static typing ----- Various types- Compile time checking- Ambient Declarations for external references------ Use with typings (*.d.ts files)- Objects and functions------ Parameter types (required and optional)------ Arrow function expressions- Interfaces   
