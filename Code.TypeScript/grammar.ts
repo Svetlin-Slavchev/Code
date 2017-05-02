@@ -26,3 +26,10 @@ var num3: number = null;
 // undefined
 var num1: number;
 var pesho = undefined;
+
+// ... (like c# params)
+class Accessory {
+    constructor(public accessoryNumber: number, public title: string) { }
+}
+
+var someFunc = function (...accessories: Accessory[]) { };

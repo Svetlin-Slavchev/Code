@@ -1,5 +1,4 @@
 ﻿// Interfaces
-
 // Function can inherite interface
 interface FuncInterface {
     (x: number): number;
@@ -37,3 +36,23 @@ var p: Person = {
 // test it.
 var pets = p.calcPets();
 console.log(pets);
+
+// Extending an interface
+
+interface ITruck extends IAuto {
+    fourByFour: string;
+}
+
+interface IAuto {
+    color: string;
+}
+
+class SomeTruck implements ITruck {
+    fourByFour: string;
+    color: string;
+
+    constructor(options: ITruck) {
+        this.fourByFour = options.fourByFour;
+        this.color = options.color;
+    }
+}

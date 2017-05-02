@@ -1,4 +1,3 @@
-// Interfaces
 var realFunc = function (x) { return x * x; };
 // Implementation
 var p = {
@@ -18,4 +17,11 @@ var p = {
 // test it.
 var pets = p.calcPets();
 console.log(pets);
+var SomeTruck = (function () {
+    function SomeTruck(options) {
+        this.fourByFour = options.fourByFour;
+        this.color = options.color;
+    }
+    return SomeTruck;
+}());
 //# sourceMappingURL=interfaces.js.map

@@ -20,4 +20,18 @@ var num3 = null;
 // undefined
 var num1;
 var pesho = undefined;
+// ... (like c# params)
+var Accessory = (function () {
+    function Accessory(accessoryNumber, title) {
+        this.accessoryNumber = accessoryNumber;
+        this.title = title;
+    }
+    return Accessory;
+}());
+var someFunc = function () {
+    var accessories = [];
+    for (var _i = 0; _i < arguments.length; _i++) {
+        accessories[_i] = arguments[_i];
+    }
+};
 //# sourceMappingURL=grammar.js.map
